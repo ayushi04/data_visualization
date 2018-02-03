@@ -1,0 +1,60 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Hello Worldcode</title>
+        <script type="text/javascript" src="./d3/d3.v3.min.js"></script>
+        <style>
+			svg {
+			  font: 10px sans-serif;
+			}
+
+			.y.axis path {
+			  display: none;
+			}
+
+			.y.axis line {
+			  stroke: #fff;
+			  stroke-opacity: .2;
+			  shape-rendering: crispEdges;
+			}
+
+			.y.axis .zero line {
+			  stroke: #000;
+			  stroke-opacity: 1;
+			}
+
+			.title {
+			  font: 300 78px Helvetica Neue;
+			  fill: #666;
+			}
+
+			.birthyear,
+			.age {
+			  text-anchor: middle;
+			}
+
+			.birthyear {
+			  fill: #fff;
+			}
+
+			rect {
+			  fill-opacity: .6;
+			  fill: #e377c2;
+			}
+
+			rect:first-child {
+			  fill: #1f77b4;
+			}
+        </style>
+    </head>
+    <body>
+    	<div id="drawPop"></div>
+        <!--<script type="text/javascript" src="viewPopulation.js"></script>-->
+        <script>
+        var param={};
+        param['element']="drawPop"; //DIV ELEMENT WHERE VISUALIZATION SHOULD BE DRAWN
+        param['filepath']="population.csv"; //ASSUMING THAT FIRST ROW CORRESPONDS TO CSV
+        //visualize(param);
+        </script>
+    </body>
+</html>
